@@ -1,0 +1,26 @@
+<!DOCTYPE html public "display of affection from creativejs">
+  <head>
+    <meta charset="uft-8" />
+    <meta name="theme-color" content="#8dc541" />
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>manifest!</title>
+    <link rel="manifest" href="manifest.json">
+  </head>
+
+  <body>
+
+
+      <h1>Welcome back!</h1>
+
+  </body>
+  <script>
+    if ('serviceWorker' in navigator) {
+      console.log("Will service worker register?");
+      navigator.serviceWorker.register('service-worker.js').then(function(reg){
+        console.log("Yes it did.");
+      }).catch(function(err) {
+        console.log("No it didn't. This happened: ", err)
+      });
+    }
+  </script>
+</html>
