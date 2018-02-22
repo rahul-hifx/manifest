@@ -1,5 +1,5 @@
 self.addEventListener('fetch', function(event) {
-  console.log('Handling fetch event for', event.request.url);
+  /*console.log('Handling fetch event for', event.request.url);
 
   event.respondWith(
     caches.match(event.request).then(function(response) {
@@ -20,5 +20,5 @@ self.addEventListener('fetch', function(event) {
         throw error;
       });
     })
-  );
+  );*/
 });
